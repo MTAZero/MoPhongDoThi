@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84B3C1E9-ADE7-4F98-8BF6-30D4280414C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MoPhongDoThi</RootNamespace>
+    <AssemblyName>MoPhongDoThi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C5">
+      <HintPath>..\packages\C5.2.5.3\lib\net45\C5.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Data.cs" />
+    <Compile Include="GUI\FrmKruskal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmKruskal.Designer.cs">
+      <DependentUpon>FrmKruskal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmPrim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmPrim.Designer.cs">
+      <DependentUpon>FrmPrim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmHamilton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmHamilton.Designer.cs">
+      <DependentUpon>FrmHamilton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmFordBellman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmFordBellman.Designer.cs">
+      <DependentUpon>FrmFordBellman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmKruskalDieuKhienChay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmKruskalDieuKhienChay.Designer.cs">
+      <DependentUpon>FrmKruskalDieuKhienChay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmPrimDieuKhienChay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmPrimDieuKhienChay.Designer.cs">
+      <DependentUpon>FrmPrimDieuKhienChay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmHamiltonDieuKhienChay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmHamiltonDieuKhienChay.Designer.cs">
+      <DependentUpon>FrmHamiltonDieuKhienChay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmFordBellmanDieuKhienChay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmFordBellmanDieuKhienChay.Designer.cs">
+      <DependentUpon>FrmFordBellmanDieuKhienChay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmKruskalThemCanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmKruskalThemCanh.Designer.cs">
+      <DependentUpon>FrmKruskalThemCanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmPrimThemCanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmPrimThemCanh.Designer.cs">
+      <DependentUpon>FrmPrimThemCanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmHamiltonThemCanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmHamiltonThemCanh.Designer.cs">
+      <DependentUpon>FrmHamiltonThemCanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmFordBellmanThemCanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmFordBellmanThemCanh.Designer.cs">
+      <DependentUpon>FrmFordBellmanThemCanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmKruskalThemDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmKruskalThemDinh.Designer.cs">
+      <DependentUpon>FrmKruskalThemDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmPrimThemDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmPrimThemDinh.Designer.cs">
+      <DependentUpon>FrmPrimThemDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmHamiltonThemDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmHamiltonThemDinh.Designer.cs">
+      <DependentUpon>FrmHamiltonThemDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmFordBellmanThemDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmFordBellmanThemDinh.Designer.cs">
+      <DependentUpon>FrmFordBellmanThemDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmDFS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmDFS.Designer.cs">
+      <DependentUpon>FrmDFS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmBFS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmBFS.Designer.cs">
+      <DependentUpon>FrmBFS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmDFSDieuKhienChay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmDFSDieuKhienChay.Designer.cs">
+      <DependentUpon>FrmDFSDieuKhienChay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmDFSThemCanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmDFSThemCanh.Designer.cs">
+      <DependentUpon>FrmDFSThemCanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmDFSThemDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmDFSThemDinh.Designer.cs">
+      <DependentUpon>FrmDFSThemDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmDijkstra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmDijkstra.Designer.cs">
+      <DependentUpon>FrmDijkstra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmBFSDieuKhienChay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmBFSDieuKhienChay.Designer.cs">
+      <DependentUpon>FrmBFSDieuKhienChay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmDijkstraDieuKhienChay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmDijkstraDieuKhienChay.Designer.cs">
+      <DependentUpon>FrmDijkstraDieuKhienChay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmBFSThemCanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmBFSThemCanh.Designer.cs">
+      <DependentUpon>FrmBFSThemCanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmDijkstraThemCanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmDijkstraThemCanh.Designer.cs">
+      <DependentUpon>FrmDijkstraThemCanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmBFSThemDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmBFSThemDinh.Designer.cs">
+      <DependentUpon>FrmBFSThemDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmDijkstraThemDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmDijkstraThemDinh.Designer.cs">
+      <DependentUpon>FrmDijkstraThemDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmVeDoThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmVeDoThi.Designer.cs">
+      <DependentUpon>FrmVeDoThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DFS.cs" />
+    <Compile Include="Model\Canh.cs" />
+    <Compile Include="Model\BFS.cs" />
+    <Compile Include="Model\Prim.cs" />
+    <Compile Include="Model\Kruskal.cs" />
+    <Compile Include="Model\Hamilton.cs" />
+    <Compile Include="Model\FordBellMan.cs" />
+    <Compile Include="Model\Dinh.cs" />
+    <Compile Include="Model\DoThi.cs" />
+    <Compile Include="Model\Dijkstra.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FrmKruskal.resx">
+      <DependentUpon>FrmKruskal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmPrim.resx">
+      <DependentUpon>FrmPrim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmHamilton.resx">
+      <DependentUpon>FrmHamilton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmFordBellman.resx">
+      <DependentUpon>FrmFordBellman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmKruskalDieuKhienChay.resx">
+      <DependentUpon>FrmKruskalDieuKhienChay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmPrimDieuKhienChay.resx">
+      <DependentUpon>FrmPrimDieuKhienChay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmHamiltonDieuKhienChay.resx">
+      <DependentUpon>FrmHamiltonDieuKhienChay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmFordBellmanDieuKhienChay.resx">
+      <DependentUpon>FrmFordBellmanDieuKhienChay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmKruskalThemCanh.resx">
+      <DependentUpon>FrmKruskalThemCanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmPrimThemCanh.resx">
+      <DependentUpon>FrmPrimThemCanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmHamiltonThemCanh.resx">
+      <DependentUpon>FrmHamiltonThemCanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmFordBellmanThemCanh.resx">
+      <DependentUpon>FrmFordBellmanThemCanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmKruskalThemDinh.resx">
+      <DependentUpon>FrmKruskalThemDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmPrimThemDinh.resx">
+      <DependentUpon>FrmPrimThemDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmHamiltonThemDinh.resx">
+      <DependentUpon>FrmHamiltonThemDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmFordBellmanThemDinh.resx">
+      <DependentUpon>FrmFordBellmanThemDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmDFS.resx">
+      <DependentUpon>FrmDFS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmBFS.resx">
+      <DependentUpon>FrmBFS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmDFSDieuKhienChay.resx">
+      <DependentUpon>FrmDFSDieuKhienChay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmDFSThemCanh.resx">
+      <DependentUpon>FrmDFSThemCanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmDFSThemDinh.resx">
+      <DependentUpon>FrmDFSThemDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmDijkstra.resx">
+      <DependentUpon>FrmDijkstra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmBFSDieuKhienChay.resx">
+      <DependentUpon>FrmBFSDieuKhienChay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmDijkstraDieuKhienChay.resx">
+      <DependentUpon>FrmDijkstraDieuKhienChay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmBFSThemCanh.resx">
+      <DependentUpon>FrmBFSThemCanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmDijkstraThemCanh.resx">
+      <DependentUpon>FrmDijkstraThemCanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmBFSThemDinh.resx">
+      <DependentUpon>FrmBFSThemDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmDijkstraThemDinh.resx">
+      <DependentUpon>FrmDijkstraThemDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmVeDoThi.resx">
+      <DependentUpon>FrmVeDoThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
